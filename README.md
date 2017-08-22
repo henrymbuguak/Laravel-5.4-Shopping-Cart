@@ -9,3 +9,5 @@ A shopping cart developed using Laravel 5.4
 <p>After cloning the project, enter the following command on your terminal: <b>cd Laravel-5.4-Shopping-Cart</b></p>
 
 <p>After navigating inside the project, run the following command to install dependencies: <b>composer update</p></p>
+
+<p>The next step is to configure database connection, open the project on your favourite text editor and locate .env.example file and rename it to .env Enter the database connection in this file.</p>
