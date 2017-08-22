@@ -20,10 +20,15 @@
            <span class="caret"></span>
          </a>
          <ul class="dropdown-menu">
-           <li><a href="{{ route('user.signup') }}">Signup</a></li>
-           <li><a href="{{ route('user.signin') }}">Signin</a></li>
-           <li role="separator" class="divider"><a href="#"></a></li>
-           <li><a href="#">Logout</a></li>
+           @if(Auth::check())
+             <li><a href="{{ route('user.profile') }}">User Profile</a></li>
+
+             <li role="separator" class="divider"><a href="#"></a></li>
+             <li><a href="{{ route('user.logout') }}">Logout</a></li>
+           @else
+             <li><a href="{{ route('user.signup') }}">Signup</a></li>
+             <li><a href="{{ route('user.signin') }}">Signin</a></li>
+           @endif
          </ul>
        </li>
      </ul>
