@@ -10,4 +10,6 @@ A shopping cart developed using Laravel 5.4
 
 <p>After navigating inside the project, run the following command to install dependencies: <b>composer update</p></p>
 
-<p>The next step is to configure database connection, open the project on your favourite text editor and locate .env.example file and rename it to .env Enter the database connection in this file.</p>
+The next step is to configure database connection, open the project on your favourite text editor and locate .env.example file and rename it to .env Enter the database connection in this file. After creating the db connection run the migration by running the following command: <b>php artisan migrate</b>. <br>
+
+The last thing we need to do is seed our database. To that, just run the following command: <b>php artisan db:seed</b>
