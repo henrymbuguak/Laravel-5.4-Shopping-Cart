@@ -44,8 +44,6 @@ Route::group(['prefix' => 'user'], function () {
             'uses' => 'UserController@getLogout',
             'as' => 'user.logout'
         ]);
-
-
 //User profile routes
         Route::get('/profile', [
             'uses' => 'UserController@getUserProfile',
@@ -53,3 +51,11 @@ Route::group(['prefix' => 'user'], function () {
         ]);
     });
 });
+
+
+//adding products to cart
+
+Route::get('/add-to-cart/{id}', [
+    'uses' => 'ProductController@getAddToCart',
+    'as' => 'product.addtocart'
+]);
