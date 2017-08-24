@@ -27,6 +27,7 @@
                 </div>
                 <button class="btn btn-primary">Login</button>
             </form>
+            <p>Don't have an account yet? <a href="{{ route('user.signup') }}"> Sign up</a></p>
         </div>
     </div>
 @endsection

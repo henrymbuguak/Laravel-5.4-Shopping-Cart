@@ -31,6 +31,7 @@
                 </div>
                 <button class="btn btn-primary">Sign up</button>
             </form>
+            <p>Already have an account? <a href="{{ route('user.signin') }}"> Login</a></p>
         </div>
     </div>
     @endsection

@@ -15,7 +15,7 @@ use DB;
 class ProductController extends Controller
 {
     public function getIndex(){
-        $products = DB::table('products')->orderBy('id', 'DESC')->paginate(3);
+        $products = DB::table('products')->orderBy('id', 'DESC')->paginate(12);
         return view('shop.index',['products' => $products]);
     }
 
