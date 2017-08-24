@@ -60,6 +60,16 @@ Route::get('/add-to-cart/{id}', [
     'as' => 'product.addtocart'
 ]);
 
+Route::get('/deduct/{id}', [
+    'uses' => 'ProductController@deductByOne',
+    'as' => 'product.deductByOne'
+]);
+
+Route::get('/delete/{id}', [
+    'uses' => 'ProductController@removeItem',
+    'as' => 'product.removeItem'
+]);
+
 Route::get('/shopping-cart', [
     'uses' => 'ProductController@getCart',
     'as' => 'product.shoppingcart'

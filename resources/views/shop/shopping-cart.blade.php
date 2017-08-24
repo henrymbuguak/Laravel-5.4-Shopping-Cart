@@ -19,8 +19,8 @@
                                  <button class="btn btn-primary btn-xs dropdown-toggle" type="button" data-toggle="dropdown"> Action
                                       <span class="caret"></span></button>
                                     <ul class="dropdown-menu">
-                                        <li><a href="">Remove item from cart by one</a> </li>
-                                        <li><a href="">Delete all items from cart</a> </li>
+                                        <li><a href="{{ route('product.deductByOne', ['product' => $product['item']['id']]) }}">Remove item from cart by one</a> </li>
+                                        <li><a href="{{ route('product.removeItem', ['product' => $product['item']['id']]) }}">Delete all items from cart</a> </li>
                                     </ul>
                             </div>
                         </li>

@@ -79,4 +79,30 @@ class ProductController extends Controller
 
         return redirect()->route('product.index')->with('success','Successfully purchased products!');
     }
+
+    public function deductByOne($id) {
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        $cart->deductByOne($id);
+
+        if (count($cart->items) > 0) {
+            Session::put('cart', $cart);
+        } else {
+            Session::forget('cart');
+        }
+        return redirect()->route('product.shoppingcart');
+    }
+
+    public function removeItem($id){
+        $oldCart = Session::has('cart') ? Session::get('cart') : null;
+        $cart = new Cart($oldCart);
+        $cart->removeItem($id);
+
+        if (count($cart->items) > 0) {
+            Session::put('cart', $cart);
+        } else {
+            Session::forget('cart');
+        }
+        return redirect()->route('product.shoppingcart');
+    }
 }
