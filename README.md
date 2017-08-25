@@ -28,7 +28,7 @@ The goal of this project is to help you get started in creating a shopping cart 
 
 # Challenge for you
 
-What we did not implement in this project is the admin dashboard for managing a shopping cart. This could be a good challenge for you to implement.
+What we did not implement in this project is the admin dashboard for managing the shopping cart. This could be a good challenge for you to implement.
 
 # Conclusion
 
