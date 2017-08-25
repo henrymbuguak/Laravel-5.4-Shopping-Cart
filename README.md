@@ -30,4 +30,4 @@ What we did not implement in this project is the admin dashboard for managing a 
 
 # Conclusion
 
-To become better at software development, you need to set new challenges for yourself. In the process you always learn new concept.
+To become better at software development, you need to set new challenges for yourself. In the process you will always learn new concept.
