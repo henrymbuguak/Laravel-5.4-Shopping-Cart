@@ -6,9 +6,7 @@ A shopping cart developed using Laravel 5.4
 
 <p>To clone the project, navigate to the folder you want to use for this project and launch your terminal. On your terminal enter the following command: <b>git clone https://github.com/henrymbuguak/Laravel-5.4-Shopping-Cart.git </b> </p>
 
-<p>After cloning the project, enter the following command on your terminal: <b>cd Laravel-5.4-Shopping-Cart</b></p>
-
-<p>After navigating inside the project, run the following command to install dependencies: <b>composer update</b></p>
+<p>After cloning the project, enter the following command on your terminal: <b>cd Laravel-5.4-Shopping-Cart</b>After navigating inside the project, run the following command to install dependencies: <b>composer update</b></p>
 
 The next step is to configure database connection, open the project on your favourite text editor and locate .env.example file and rename it to .env Enter the database connection in this file. After creating the db connection run the migration by running the following command: <b>php artisan migrate</b>. <br>
 
@@ -16,3 +14,20 @@ The last thing we need to do is to seed our database. To do that, just run the f
 
 
 # The goal of the project
+
+The goal of this project is help you get started in creating a shopping cart using laravel 5.4. Ecommerce is going to be huge deal in 21st century. Here are the goals:
+
+- We created project from ground up.
+- We created custom authentication for customer to sign in.
+- We created database seeder to seed our products.
+- We added ability for user add product to their shopping cart.
+- We connected our application stripe online payment services.
+- Customers are able to buy items from our application.
+
+# Challenge for you
+
+What we did not implement in this project is the admin dashboard for managing a shopping cart. This could be a good challenge for you to implement.
+
+# Conclusion
+
+To become better at software development, you need to set new challenges for yourself. In the process you always learn new concept.
