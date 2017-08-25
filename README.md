@@ -15,15 +15,16 @@ The last thing we need to do is to seed our database. To do that, just run the f
 
 # The goal of the project
 
-The goal of this project is help you get started in creating a shopping cart using laravel 5.4. Ecommerce is going to be huge deal in 21st century. Here are the goals:
+The goal of this project is to help you get started in creating a shopping cart using laravel 5.4. Ecommerce is going to be a huge deal in 21st century. Here are the goals we have accomplished:
 
 - We created project from ground up.
 - We created custom authentication for customer to sign in.
 - We created database seeder to seed our products.
-- We added ability for user add product to their shopping cart.
-- We connected our application stripe online payment services.
+- We added ability for user add products to their shopping cart.
+- We connected our application with stripe online payment services.
 - We also implemented the use of guest and auth middleware.
 - Customers are able to buy items from our application.
+- We store the orders in the database, we also get payment id from stripe.
 
 # Challenge for you
 
