@@ -22,6 +22,7 @@ The goal of this project is help you get started in creating a shopping cart usi
 - We created database seeder to seed our products.
 - We added ability for user add product to their shopping cart.
 - We connected our application stripe online payment services.
+- We also implemented the use of guest and auth middleware.
 - Customers are able to buy items from our application.
 
 # Challenge for you
